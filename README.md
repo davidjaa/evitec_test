@@ -41,6 +41,8 @@ Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
 
 ### Frontend
 - cd frontend
+- npm install
+- npm install three
 - npm start
 
 # Testimine
