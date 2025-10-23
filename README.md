@@ -1,4 +1,4 @@
-##Ülevaade
+## Ülevaade
 
 Spring Boot + DB2 rakendus, mis võimaldab hallata klientide andmeid.
 Süsteem koosneb:
@@ -13,7 +13,7 @@ Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
 - Kui klient juba eksisteerib, tagastatakse teade ega lisata duplikaati
 
 
-##Manuaalne Testimine
+## Manuaalne Testimine
 
 | ID | Testjuhtum | Sisend | Oodatud tulemus |
 | :--: | :--: | :--: | :--: |
@@ -23,9 +23,9 @@ Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
 | TC04 | Isikukood liiga lühike | Mari, Kask, 12345, mari@example.test | Tagastab "Isikukood peab olema 11 numbrit!" |
 
 
-##Käivitamine
+## Käivitamine
 
-#Andmebaas
+# Andmebaas
 - Muuda src/main/resources/application.properties DB2 andmebaasi nimi, kasutajanimi ja parool käsitsi:
   spring.datasource.url=jdbc:db2://localhost:50000/YOUR_DB
   spring.datasource.username=YOUR_USERNAME
@@ -34,13 +34,13 @@ Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
 - db2start
 - db2 connect to YOUR_DB user YOUR_USERNAME using YOUR_PASSWORD
 
-#Backend
+# Backend
 - cd backend
 - mvn spring-boot:run
 
-#Frontend
+# Frontend
 - cd frontend
 - npm start
 
-#Testimine
+# Testimine
 - npx cypress open
