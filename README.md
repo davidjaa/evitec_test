@@ -1,6 +1,6 @@
 ## Ülevaade
 
-Spring Boot + DB2 rakendus, mis võimaldab hallata klientide andmeid.
+Rakendus, mis võimaldab hallata klientide andmeid.
 Süsteem koosneb:
 - Backendist (Java, Spring Boot)
 - Frontendist (React)
