@@ -19,7 +19,6 @@ public class Customer {
     private String personalCode;
     private String email;
 
-    // getterid ja setterid
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
