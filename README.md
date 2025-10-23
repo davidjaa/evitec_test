@@ -1,3 +1,18 @@
+Ülevaade
+
+Spring Boot + DB2 rakendus, mis võimaldab hallata klientide andmeid.
+Süsteem koosneb:
+- Backendist (Java, Spring Boot)
+- Frontendist (React)
+- DB2 andmebaasist
+
+Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
+- Isikukood on unikaalne
+- Nimi sisaldab ainult tähti ja sidekriipse
+- Isikukood on 11 numbrit pikk
+- Kui klient juba eksisteerib, tagastatakse teade ega lisata duplikaati
+
+
 Manuaalne Testimine
 
 | ID | Testjuhtum | Sisend | Oodatud tulemus |
@@ -7,3 +22,13 @@ Manuaalne Testimine
 | TC03 | Eesnimi sisaldab numbreid või märke | Mari123, Kask!, 49002120011, mari@example.test | Tagastab "Nimi võib sisaldada ainult tähti ja sidekriipsu!" |
 | TC04 | Isikukood liiga lühike | Mari, Kask, 12345, mari@example.test | Tagastab "Isikukood peab olema 11 numbrit!" |
 
+
+Käivitamine
+
+Backend
+cd backend
+mvn spring-boot:run
+
+Frontend
+cd frontend
+npm start
