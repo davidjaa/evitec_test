@@ -45,3 +45,5 @@ Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
 
 # Testimine
 - npx cypress open
+- E2E Testing
+- create_customer.cy.js
