@@ -27,6 +27,7 @@ Rakendus võimaldab lisada uusi kliente ning kontrollib, et:
 
 ### Andmebaas
 - Muuda src/main/resources/application.properties DB2 andmebaasi nimi, kasutajanimi ja parool käsitsi:
+  
   spring.datasource.url=jdbc:db2://localhost:50000/YOUR_DB
   spring.datasource.username=YOUR_USERNAME
   spring.datasource.password=YOUR_PASSWORD
